@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGS Biochem Analytical Lab | Food, Water &amp; Soil Analysis</title>
+    <meta name="description" content="TGS Biochem Analytical Labs - Premier testing and analytical solutions for Food, Water, and Soil.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TGS Biochem Analytical Lab | Food, Water &amp; Soil Analysis">
+    <meta property="og:description" content="Advanced analytical biochemistry, and testing services for Food, Water, and Soil.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TGS Biochem Analytical Labs">
+    <meta property="og:image" content="biochem.jpeg">
+
+    <style>
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+            [data-animate].animated {
+                opacity: 1;
+                transform: translateY(0);
+            }
+    </style>
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    <link rel="stylesheet" href="_astro/index%40_%40astro.DkeXIFjA.css">
+</head>
+
+<body class="min-h-screen bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100">
+    <!-- Header -->
+    <header data-header class="fixed left-0 right-0 top-0 z-50 transition-all duration-300 bg-transparent">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
+            <a href="index.html" class="relative z-10 flex items-center gap-3">
+                <img src="biochem.jpeg" alt="TGS Biochem Analytical Labs Logo" class="h-10 w-auto object-contain rounded-lg bg-white p-1">
+                <div class="hidden sm:block">
+                    <span class="text-lg font-bold text-white">TGS Biochem Analytical Labs</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-8 lg:flex" data-nav>
+                <a href="#about-us" class="text-sm font-medium text-white/80 transition-colors hover:text-white">About Us</a>
+                <a href="#vision-mission" class="text-sm font-medium text-white/80 transition-colors hover:text-white">Vision and Mission</a>
+                <a href="#services" class="text-sm font-medium text-white/80 transition-colors hover:text-white">Services</a>
+                <a href="#contact-us" class="text-sm font-medium text-white/80 transition-colors hover:text-white">Contact us</a>
+            </div>
+
+            <!-- Right Side Actions -->
+            <div class="flex items-center gap-4">
+                <button type="button" id="theme-toggle" class="rounded-lg p-2 text-white/70 hover:bg-white/10 hover:text-white" aria-label="Toggle dark mode">
+                    <svg class="h-5 w-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg class="hidden h-5 w-5 dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+
+                <a href="#contact-us" class="hidden rounded-full bg-gradient-to-r from-primary-500 to-accent-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary-500/25 transition-all hover:shadow-xl hover:shadow-primary-500/30 lg:inline-flex">
+                    Get Quote
+                </a>
+
+                <button type="button" id="mobile-menu-toggle" class="rounded-lg p-2 text-white hover:bg-white/10 lg:hidden" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden border-t border-white/10 bg-gray-900/95 px-4 py-6 backdrop-blur-xl lg:hidden">
+            <div class="flex flex-col gap-4">
+                <a href="#about-us" class="text-lg font-medium text-white transition-colors hover:text-primary-400">About Us</a>
+                <a href="#vision-mission" class="text-lg font-medium text-white transition-colors hover:text-primary-400">Vision and Mission</a>
+                <a href="#services" class="text-lg font-medium text-white transition-colors hover:text-primary-400">Services</a>
+                <a href="#contact-us" class="text-lg font-medium text-white transition-colors hover:text-primary-400">Contact us</a>
+                <div class="mt-4 border-t border-white/10 pt-4">
+                    <a href="#contact-us" class="inline-flex w-full justify-center rounded-full bg-gradient-to-r from-primary-500 to-accent-500 px-5 py-3 text-sm font-semibold text-white shadow-lg">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen overflow-hidden bg-gray-950">
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-950 via-gray-950 to-accent-950"></div>
+                <div class="absolute -left-40 top-0 h-[500px] w-[500px] rounded-full bg-primary-500/30 blur-[120px]"></div>
+                <div class="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-accent-500/30 blur-[120px]"></div>
+                <div class="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-600/20 blur-[100px]"></div>
+                <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+            </div>
+
+            <div class="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-4 py-32 text-center lg:px-8">
+                <div class="mb-8 inline-flex items-center gap-2 rounded-full border border-primary-500/30 bg-primary-500/10 px-4 py-2 backdrop-blur-sm">
+                    <span class="relative flex h-2 w-2">
+                        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75"></span>
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-accent-500"></span>
+                    </span>
+                    <span class="text-sm font-medium text-primary-200">Standard Analytical Laboratory &amp; Research</span>
+                </div>
+
+                <h1 class="max-w-4xl text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+                    Food, Water, Soil
+                    <span class="bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text text-transparent">
+                        Analysis &amp; Research
+                    </span>
+                </h1>
+
+                <p class="mx-auto mt-6 max-w-2xl text-lg text-gray-400 lg:text-xl">
+                    TGS Biochem Analytical Labs delivers comprehensive biochemical profiling, environmental contaminant testing, and in silico computational research designed to guarantee safety, quality, and sustainability.
+                </p>
+
+                <div class="mt-12 flex flex-col items-center gap-4 sm:flex-row">
+                    <a href="#services" class="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-primary-500/25 transition-all hover:shadow-xl hover:shadow-primary-500/30">
+                        Explore Services
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                    <a href="#about-us" class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-white/30 hover:bg-white/10">
+                        About Us
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="mt-20 grid grid-cols-2 gap-8 border-t border-white/10 pt-12 sm:grid-cols-4 w-full">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white lg:text-4xl">1000+</div>
+                        <div class="mt-1 text-sm text-gray-400">Samples Analyzed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white lg:text-4xl">100+</div>
+                        <div class="mt-1 text-sm text-gray-400">Research Publications</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white lg:text-4xl">25+</div>
+                        <div class="mt-1 text-sm text-gray-400">Expert Scientists</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white lg:text-4xl">100%</div>
+                        <div class="mt-1 text-sm text-gray-400">Precision Quality</div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex justify-center">
+                    <a href="#about-us" class="flex flex-col items-center gap-2 text-gray-500 transition-colors hover:text-primary-400">
+                        <span class="text-xs font-medium uppercase tracking-widest">Scroll</span>
+                        <svg class="h-5 w-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="bg-white py-20 dark:bg-gray-950 lg:py-28">
+            <div class="mx-auto max-w-7xl px-4 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-900/30 dark:text-primary-300">
+                        Scientific Advisory &amp; Leadership
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+                        About <span class="text-gradient">Our Lab &amp; Team</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                        TGS Biochem Analytical Labs combines analytical laboratory instrumentation with computational structural biology and molecular modeling to provide high-precision validation across agrochemical, food, and environmental industries.
+                    </p>
+                </div>
+
+                <!-- Featured Scientists -->
+                <div class="mt-16 grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+                    <!-- Dr. Giridhar Goudar -->
+                    <div class="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 border border-primary-500/20 p-6" data-animate>
+                        <div>
+                            <div class="flex items-center gap-4 mb-5">
+                                <div class="h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-gray-800 border border-primary-500/30">
+                                    <img src="giri.jfif" alt="Dr. Giridhar Goudar" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                                </div>
+                                <div>
+                                    <span class="inline-block rounded-full bg-primary-500/10 px-2.5 py-0.5 text-xs font-medium text-primary-400 mb-1">
+                                        Food Biochemistry &amp; Nutritional Sciences
+                                    </span>
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Dr. Giridhar Goudar</h3>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">Biochemist &amp; Analytical Research Lead</p>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2.5 text-xs leading-relaxed text-gray-600 dark:text-gray-300 border-t border-gray-200 dark:border-gray-800 pt-4">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">Nutritional Profiling &amp; Bioactives:</strong> Specializes in biochemical characterization of polyphenols, flavonoids, and micronutrients in plant matrices and functional foods.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">By-Product Valorization:</strong> Focuses on the extraction, recovery, and stability of biologically active compounds from agro/food waste streams.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">In Vitro Digestion Models:</strong> Simulates gastrointestinal digestion to assess bioavailability, stability, and antioxidant potency of dietary compounds.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">Lipid Metabolism &amp; Biomarkers:</strong> Evaluates functional food interventions on lipid parameters (HDL, LDL, VLDL) and metabolic markers like Gb3.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">Analytical Food Safety:</strong> Applies standard spectrophotometric and chromatographic assays to verify nutrient density and authenticity.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-6 border-t border-gray-200 dark:border-gray-800 pt-4">
+                            <a href="https://scholar.google.com/citations?user=8sBXHYIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg bg-primary-500/10 px-3.5 py-1.5 text-xs font-semibold text-primary-400 transition-colors hover:bg-primary-500 hover:text-white">
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
+                                </svg>
+                                Google Scholar Profile
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dr. Manne Munikumar -->
+                    <div class="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 border border-primary-500/20 p-6" data-animate>
+                        <div>
+                            <div class="flex items-center gap-4 mb-5">
+                                <div class="h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-gray-800 border border-primary-500/30">
+                                    <img src="manne.jfif" alt="Dr. Manne Munikumar" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                                </div>
+                                <div>
+                                    <span class="inline-block rounded-full bg-primary-500/10 px-2.5 py-0.5 text-xs font-medium text-primary-400 mb-1">
+                                        Bioinformatics &amp; Molecular Modeling
+                                    </span>
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Dr. Manne Munikumar</h3>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">Bioinformatics &amp; Computational Biology Lead</p>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2.5 text-xs leading-relaxed text-gray-600 dark:text-gray-300 border-t border-gray-200 dark:border-gray-800 pt-4">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">Structural Biology &amp; Modeling:</strong> Specializes in in silico target identification, 3D macromolecular structure prediction (homology modeling), and structural refinement.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">Docking &amp; Virtual Screening:</strong> Employs high-throughput screening and docking simulations to evaluate ligand-protein binding mechanisms and affinities.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">Molecular Dynamics (MD):</strong> Analyzes thermodynamic stability, conformational trajectories, and root-mean-square metrics (RMSD/RMSF) of biological complexes.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">NGS &amp; Genomics:</strong> Conducts high-throughput genomic data processing, variant calling, and transcriptomic data interpretation.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary-500 font-bold mt-0.5">&bull;</span>
+                                    <span><strong class="text-gray-900 dark:text-white">In Silico ADMET &amp; Vaccines:</strong> Evaluates pharmacokinetic profiles, drug-likeness, toxicity risks, and multi-epitope vaccine construct design.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-6 border-t border-gray-200 dark:border-gray-800 pt-4">
+                            <a href="https://scholar.google.com/citations?user=_Fejj7YAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg bg-primary-500/10 px-3.5 py-1.5 text-xs font-semibold text-primary-400 transition-colors hover:bg-primary-500 hover:text-white">
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
+                                </svg>
+                                Google Scholar Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision and Mission Section -->
+        <section id="vision-mission" class="bg-gray-50 py-20 dark:bg-gray-900 lg:py-28">
+            <div class="mx-auto max-w-7xl px-4 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-4 py-1.5 text-sm font-medium text-accent-700 dark:border-accent-800 dark:bg-accent-900/30 dark:text-accent-300">
+                        Our Guiding Principles
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+                        Vision &amp; <span class="text-gradient">Mission</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                        Driving analytical excellence through rigorous biochemical assays, standard compliance, and computational innovation.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid gap-8 md:grid-cols-2">
+                    <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-gray-800" data-animate>
+                        <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Our Vision</h3>
+                        <p class="mt-4 text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                            To become a benchmark laboratory and global research partner in analytical testing, food safety, water security, and computational bio-solutions, enabling sustainable agricultural and environmental ecosystems worldwide.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-gray-800" data-animate>
+                        <div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-accent-100 text-accent-600 dark:bg-accent-900/30 dark:text-accent-400">
+                            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Our Mission</h3>
+                        <p class="mt-4 text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                            To provide accurate, reproducible, and rapid analytical services for food, water, and soil samples using state-of-the-art chromatographic, spectroscopic, and computational tools while upholding strict regulatory compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section with Itemized Testing Capabilities -->
+        <section id="services" class="bg-white py-20 dark:bg-gray-950 lg:py-28">
+            <div class="mx-auto max-w-7xl px-4 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-900/30 dark:text-primary-300">
+                        Analytical Capabilities
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+                        Comprehensive <span class="text-gradient">Testing Services</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                        High-precision laboratory testing protocols, biochemical diagnostics, and research computational analysis for Food, Water, and Soil.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid gap-8 md:grid-cols-3">
+                    <!-- Food Analysis Card -->
+                    <div class="flex flex-col justify-between rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-sm dark:border-gray-800 dark:bg-gray-900" data-animate>
+                        <div>
+                            <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Food Analysis</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Standardized nutritional, chemical, and microbiological profiling for regulatory compliance and consumer safety.</p>
+
+                            <ul class="mt-6 space-y-2.5 text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 pt-5">
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Nutritional Profiling (Proximate Analysis: Protein, Fat, Carbohydrates, Energy)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Pesticide Residue &amp; Chemical Contaminant Screening</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Food Adulteration &amp; Authenticity Verification</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Microbial Pathogen Testing (E. coli, Salmonella, Yeast &amp; Molds)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Preservative, Additive &amp; Food Color Quantification</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Shelf-Life &amp; Accelerated Stability Studies</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800">
+                            <a href="#contact-us" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 hover:text-primary-600 dark:text-primary-400">
+                                Request Food Analysis &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Water Analysis Card -->
+                    <div class="flex flex-col justify-between rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-sm dark:border-gray-800 dark:bg-gray-900" data-animate>
+                        <div>
+                            <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Water Testing</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Complete physicochemical, toxicological, and microbial assays for drinking, borewell, and industrial water.</p>
+
+                            <ul class="mt-6 space-y-2.5 text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 pt-5">
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Potable &amp; Packaged Drinking Water Testing (IS 10500 / IS 14543)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Physicochemical Analysis (pH, TDS, Turbidity, Total Hardness, Alkalinity)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Trace Heavy Metal Detection (Lead, Arsenic, Cadmium, Chromium, Mercury)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Microbiological Testing (Coliforms, E. coli, Faecal Streptococci)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Effluent &amp; Wastewater Quality Profiling (BOD, COD, TSS, Oil &amp; Grease)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Agricultural &amp; Irrigation Water Suitability Evaluation</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800">
+                            <a href="#contact-us" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 hover:text-primary-600 dark:text-primary-400">
+                                Request Water Testing &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Soil Analysis Card -->
+                    <div class="flex flex-col justify-between rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-sm dark:border-gray-800 dark:bg-gray-900" data-animate>
+                        <div>
+                            <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Soil &amp; Agro Testing</h3>
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Fertility mapping, mineral balance, and environmental remediation tests for agriculture and environmental projects.</p>
+
+                            <ul class="mt-6 space-y-2.5 text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 pt-5">
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Soil Fertility Assessment &amp; Primary Nutrients (NPK Ratio)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Secondary Nutrients &amp; Micronutrients (Ca, Mg, S, Zn, Fe, Cu, Mn, B)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Soil Physical Properties (pH, Electrical Conductivity, Texture, Bulk Density)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Organic Matter &amp; Total Organic Carbon (TOC)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Heavy Metals &amp; Soil Contaminant Remediation Analysis</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Soil Biological Activity &amp; Microbial Population Counts</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800">
+                            <a href="#contact-us" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 hover:text-primary-600 dark:text-primary-400">
+                                Request Soil Testing &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="bg-gray-50 py-20 dark:bg-gray-900 lg:py-28">
+            <div class="mx-auto max-w-7xl px-4 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-4 py-1.5 text-sm font-medium text-accent-700 dark:border-accent-800 dark:bg-accent-900/30 dark:text-accent-300">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+                        Contact <span class="text-gradient">Our Team</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                        Reach out for analytical test quotes, sample submission protocols, and institutional research collaborations.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid gap-12 lg:grid-cols-2">
+                    <div class="relative h-full min-h-[400px] overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 lg:min-h-0">
+                        <iframe title="TGS Biochem Analytical Lab Location" class="h-full w-full border-0" src="https://www.openstreetmap.org/export/embed.html?bbox=78.5200%2C17.4200%2C78.5450%2C17.4400&amp;layer=mapnik&amp;marker=17.4319%2C78.5310" loading="lazy"></iframe>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                            <div class="flex items-end justify-between">
+                                <div>
+                                    <p class="font-semibold text-white">TGS Biochem Analytical Lab</p>
+                                    <p class="text-sm text-gray-300">Tarnaka, Hyderabad, Telangana</p>
+                                </div>
+                                <a href="https://maps.google.com/?q=Vijayapuri+Colony+Tarnaka+Hyderabad" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/30">
+                                    Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">TGS Biochem Analytical Lab</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">
+                            Vijayapuri colony<br>Tarnaka, Hyderabad, Telangana 500017, India
+                        </p>
+
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Facility Highlights</h4>
+                            <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+                                <li class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    High-Precision Instrumentation
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Fast Sample Turnaround Time
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    NABL &amp; ISO Aligned Protocols
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Dedicated Technical Support
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="mailto:info@tgsbiochem.com" class="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 font-semibold text-white shadow-lg shadow-primary-500/25 transition-all hover:bg-primary-600 hover:shadow-xl">
+                                Request Quote
+                            </a>
+                            <a href="https://maps.google.com/?q=Vijayapuri+Colony+Tarnaka+Hyderabad" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 transition-all hover:border-primary-500 hover:text-primary-500 dark:border-gray-600 dark:text-gray-300 dark:hover:border-primary-500 dark:hover:text-primary-400">
+                                Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-gray-900 dark:border-gray-800">
+        <div class="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-20">
+            <div class="grid gap-12 lg:grid-cols-4">
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="inline-flex items-center gap-3">
+                        <img src="biochem.jpeg" alt="TGS Biochem Analytical Labs" class="h-10 w-auto object-contain rounded-lg bg-white p-1">
+                        <span class="text-xl font-bold text-white">TGS Biochem Labs</span>
+                    </a>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-400">
+                        Vijayapuri Colony, Tarnaka, Hyderabad, Telangana, India
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Navigation</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#about-us" class="text-sm text-gray-400 transition-colors hover:text-primary-400">About Us</a></li>
+                        <li><a href="#vision-mission" class="text-sm text-gray-400 transition-colors hover:text-primary-400">Vision and Mission</a></li>
+                        <li><a href="#services" class="text-sm text-gray-400 transition-colors hover:text-primary-400">Services</a></li>
+                        <li><a href="#contact-us" class="text-sm text-gray-400 transition-colors hover:text-primary-400">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Scientific Focus</h4>
+                    <ul class="mt-4 space-y-3 text-sm text-gray-400">
+                        <li>Computational Biology</li>
+                        <li>Food &amp; Nutrition Testing</li>
+                        <li>Water Contaminant Profiling</li>
+                        <li>Soil Chemistry &amp; Remediation</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Contact</h4>
+                    <ul class="mt-4 space-y-3 text-sm text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:info@tgsbiochem.com" class="transition-colors hover:text-primary-400">info@tgsbiochem.com</a>
+                        </li>
+                        <li class="flex items-start gap-2 pt-2">
+                            <svg class="h-5 w-5 flex-shrink-0 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <address class="not-italic leading-relaxed">
+                                TGS Biochem Analytical Lab, Vijayapuri colony, Tarnaka, Hyderabad, Telangana 500017, India
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 sm:flex-row">
+                <p class="text-sm text-gray-500">&copy; 2026 TGS Biochem Analytical Labs &bull; All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script type="module">
+        const initApp = () => {
+            initTheme();
+            initMobileMenu();
+            initHeaderScroll();
+            initScrollAnimations();
+        };
+
+        const initTheme = () => {
+            const toggle = document.getElementById("theme-toggle");
+            if (toggle) {
+                toggle.addEventListener("click", () => {
+                    const isDark = document.documentElement.classList.toggle("dark");
+                    localStorage.setItem("theme", isDark ? "dark" : "light");
+                });
+            }
+        };
+
+        const initMobileMenu = () => {
+            const toggle = document.getElementById("mobile-menu-toggle");
+            const menu = document.getElementById("mobile-menu");
+            if (!toggle || !menu) return;
+
+            toggle.addEventListener("click", () => {
+                const expanded = toggle.getAttribute("aria-expanded") === "true";
+                toggle.setAttribute("aria-expanded", String(!expanded));
+                menu.classList.toggle("hidden");
+            });
+
+            menu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    toggle.setAttribute("aria-expanded", "false");
+                    menu.classList.add("hidden");
+                });
+            });
+        };
+
+        const initHeaderScroll = () => {
+            const header = document.querySelector("[data-header]");
+            if (!header) return;
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    header.classList.add("scrolled", "bg-gray-900/90", "backdrop-blur-md");
+                } else {
+                    header.classList.remove("scrolled", "bg-gray-900/90", "backdrop-blur-md");
+                }
+            });
+        };
+
+        const initScrollAnimations = () => {
+            const elements = document.querySelectorAll("[data-animate]");
+            if (!elements.length) return;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            elements.forEach(el => observer.observe(el));
+        };
+
+        document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", initApp) : initApp();
+    </script>
+</body>
+</html>
